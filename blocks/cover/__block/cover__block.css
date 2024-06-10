@@ -1,0 +1,4 @@
+.cover__block {
+	position: relative;
+	z-index: 10;
+}

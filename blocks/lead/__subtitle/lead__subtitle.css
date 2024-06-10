@@ -1,0 +1,36 @@
+.lead__subtitle {
+	max-width: 640px;
+	margin: 0 auto 64px;
+	font-size: 30px;
+	line-height: 40px;
+	text-align: center;
+	color: #ffffff;
+}
+.lead__subtitle a{
+	color: #ffffff;
+	text-decoration: none;
+	transition: opacity 0.3s ease 0s;
+
+}
+.lead__subtitle a:hover{
+	opacity: 0.7;
+}
+@media screen and (max-width: 1024px) {
+	.lead__subtitle {
+		margin: 0 auto 56px;
+	}
+}
+@media screen and (max-width: 710px) {
+	.lead__subtitle {
+		font-size: 4.23vw;
+		line-height: 5vw;
+	}
+}
+@media screen and (max-width: 425px) {
+	.lead__subtitle {
+		max-width: calc(100% - 32px);
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0 auto 40px;
+	}
+}

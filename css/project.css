@@ -1,0 +1,75 @@
+.photo-grid-block{
+    cursor: pointer;
+}
+
+.photo-grid-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(0,0,0,.4);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease all;
+}
+
+.photo-grid-modal--show{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s ease all;
+}
+
+.photo-grid-modal-item{
+    display: none;
+    flex-direction: column;
+    max-width: 700px;
+    width: 100%;
+    background: #2a2c2f;
+    padding: 20px;
+    z-index: 1;
+    transition: 0.3s ease all;
+}
+
+.photo-grid-modal-item--show{
+    display: flex;
+    transition: 0.3s ease all;
+}
+
+.close-modal{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.grid-modal-close{
+    width: 30px;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    transition: 0.3s ease all;
+}
+
+.grid-modal-close:hover{
+    cursor: pointer;
+    transform: rotate(-90deg);
+    transition: 0.3s ease all;
+}
+
+.grid-modal-photo{
+    width: 100%;
+}
+
+.photo-grid-modal h2{
+    color: white;
+}
+.photo-grid-modal p{
+    color: white;
+    font-size: larger;
+}
